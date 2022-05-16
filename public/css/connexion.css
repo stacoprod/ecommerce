@@ -1,0 +1,75 @@
+#contenu_connexion {
+}
+    width: 40%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+form {
+    width:50%;
+}
+#contenu_connexion form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    height: 150px;
+}
+#contenu_connexion form label {
+    margin-right: auto;
+}
+
+#contenu_connexion form input, #contenu_connexion form label {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: calc(50% - 10px);
+}
+
+#contenu_connexion form input {
+    margin-left: auto;
+    height: 37px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+#bouton_connexion {
+    border-radius: 7px;
+    margin-left: auto;
+    width: 100%!important;
+    cursor: pointer;
+    background-color: white;
+    color: #2d2d2d;
+    transition: color 200ms ease-in-out ;
+    transition: background-color 200ms ease-in-out;
+    transition: transform 200ms;
+    transform: scale(1);
+}
+#bouton_connexion:hover {
+    background-color: #910000;
+    color:white;
+    transition: color 200ms ease-in-out ;
+    transition: background-color 200ms ease-in-out;
+    transition: transform 200ms;
+    transform: scale(1.04);
+}
+#contenu_connexion p {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contenu_connexion a {
+    color: #640000;
+}
+
+#contenu_connexion a:hover {
+    color: red;
+}
+@media screen and (max-width: 960px) {
+    #contenu_connexion form {
+        width: 100%!important;
+    }
+
+    #contenu_connexion {
+        width: calc(90% - 40px);
+    }
+}

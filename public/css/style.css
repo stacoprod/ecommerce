@@ -1,0 +1,44 @@
+h3, h4, h5, h6 {
+    color: black;
+}
+.fond_accueil{
+}
+    background: url(img/fond.jpg);
+    height: 480px;
+}
+form
+{
+    text-align:center;
+}
+.back {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+
+}
+.back:hover {
+    color: white;
+    background-color: #a80000;
+
+}
+.contenu_stripe{
+    position: relative;
+    top:100px;
+    width: 30%;
+    background: whitesmoke;
+    margin: auto;
+    border-radius: 9px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.tchat{
+    border: solid slateblue;
+    width: 50%;
+}
+
+@media screen and (min-width: 1900px) {
+    .fond_accueil {
+        width: 100%;
+    }
+}

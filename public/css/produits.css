@@ -1,0 +1,259 @@
+/*Titre page*/
+h2 {
+    color: #2d2601;
+    font-size: 30px;
+    font-family: 'Smooch Sans', sans-serif;
+}
+/*Sections de page*/
+.colonnes_container {
+    display: flex;
+    flex-direction: row;
+}
+.colonne_tri {
+    display: unset;
+    width: 136px;
+    height: 100%;
+    margin: 20px;
+    position: relative;
+        left: -10px;
+}
+.colonne_droite {
+    width: 75%;
+}
+/*Partie tri produits*/
+label {
+    color: #230000;
+    font-size: 14px;
+}
+select {
+    color: #000000;
+    border: 1px solid silver;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    padding: 3px;
+    margin: 3px 0px;
+    width: 80px;
+    cursor:pointer;
+    transition: color 200ms ease-out ;
+    transition: background-color 200ms ease-out;
+    transition: transform 200ms;
+    transform: scale(1);
+}
+option:hover {
+    background-color: #b00000;
+    cursor:pointer;
+}
+.lancer_recherche {
+    color: black;
+    background-color: whitesmoke;
+    padding: 11px;
+    margin-top: 22px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    transition: color 200ms ease-out ;
+    transition: background-color 200ms ease-out;
+    transition: transform 200ms;
+    transform: scale(1);
+}
+.lancer_recherche:hover {
+    background-color: #9b0000;
+    color: #ffffff;
+    cursor:pointer;
+    transition: color 200ms ease-out ;
+    transition: background-color 200ms ease-out;
+    transition: transform 200ms;
+    transform: scale(1.10);
+}
+/*Boutons de recherche sur petits écrans, caché sur les grands écrans*/
+.search_button {
+    display: none;
+}
+.close_button{
+    font-weight: bold;
+    width:25px;
+    height:25px;
+    display: none;
+    position: absolute;
+    border: 1px solid grey;
+    top:3px;
+    left: 127px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0);
+}
+.close_button:hover{
+    cursor:pointer;
+    background-color: #9d2323;
+}
+/*Partie articles*/
+/*Centrage et wrapping des éléments*/
+#articles_produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Mise en forme de chaque carte article*/
+.article_produits {
+    width: calc(20% - 20px);
+    padding: 10px;
+    margin:10px;
+    position: relative;
+    background-color: rgba(255,255,255,0);
+    border-radius: 9px;
+    transition: color 200ms ease-out ;
+    transition: background-color 200ms ease-out;
+    transition: transform 200ms;
+    transform: scale(1);
+}
+.article_container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    height: 100%;
+}
+/*Image vélo*/
+.article_produits img {
+    max-width: 100%;
+    margin-top: 20px;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+/*Nom produit*/
+.article_produits h3 {
+    font-size: 18px;
+    width: calc(40% - 20px);
+    padding:10px;
+    margin-right: auto;
+}
+.article_produits h4 {
+    width: calc(60% - 20px);
+    padding:10px;
+    margin-left: auto;
+    text-align: right;
+    color: #000000;
+}
+/*prix barré*/
+.article_produits h4 s {
+    color: #790000;
+}
+/*Extrait de la désignation*/
+.article_produits p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+}
+.bouton_produit {
+    padding: 10px 25px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 9px;
+    border: 1px solid black;
+    opacity: 0;
+    transition: 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background: whitesmoke;
+
+}
+.bouton_produit:hover {
+    background: #b40000;
+    color: #ffffff;
+}
+/*Effets de transparence au survol*/
+.article_produits:hover .article_container {
+    opacity: 0.7;
+    transition: color 200ms ease-out ;
+    transition: background-color 200ms ease-out;
+    transition: transform 200ms;
+    transform: scale(1.10);
+}
+.article_produits:hover .bouton_produit {
+    opacity: 1;
+}
+#accueil_2 {
+    width:100%;
+    margin-top:20px;
+}
+
+#icones_accueil {
+    background-image: url("../images/accueil/accueil_2.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    height:1080px;
+    margin-top: 20px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 1400px) {
+    .article_produits {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .search_button {
+        color: #000000;
+        background-color: whitesmoke;
+        border: 1px solid grey;
+        padding: 10px;
+        margin-top: 7px;
+        border-radius: 8px;
+        display: unset;
+        transition: color 200ms ease-in-out ;
+        transition: background-color 200ms ease-in-out;
+        transition: transform 200ms;
+        transform: scale(1);
+    }
+    .search_button:hover {
+        background-color: #c50000;
+        color: #ffffff;
+        cursor:pointer;
+        transition: color 200ms ease-in-out ;
+        transition: background-color 200ms ease-in-out;
+        transition: transform 200ms;
+        transform: scale(1.10);
+
+    }
+    .close{
+        display:none;
+    }
+    .close_button{
+        display: unset;
+    }
+    /*Affichage du tri sous forme de popup pour les petits écrans*/
+    .colonne_tri {
+        display: none;
+        justify-content: left;
+        position:absolute;
+                left: 5%;
+                top: 220px;
+        height: 320px;
+        padding: 10px;
+        border: solid 1px grey;
+        border-radius: 9px;
+        z-index: 1;
+        background-color: rgba(252,252,252,0.8);
+    }
+    .colonne_droite {
+        width: 100%;
+    }
+    .colonnes_container {
+        justify-content: center;
+    }
+    /*Overwrite du CSS en mode large pour avoir à nouveau la colonne de tri*/
+    .force_display {
+        display: block;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .article_produits {
+        width: 80%;
+    }
+}

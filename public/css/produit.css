@@ -1,0 +1,104 @@
+.div_produit {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+}
+.en_tete{
+    display: flex;
+    justify-content: right;
+}
+.retour_produits{
+    width:25px;
+    height:25px;
+    position: relative;
+        top: -15px;
+        right: -15px;
+    color: white;
+    border: solid 1px grey;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.retour_produits:hover{
+    background-color: #a61818;
+    color: #ffffff;
+    cursor:pointer;
+}
+.retour_produits span{
+    color: #000000;
+    font-weight: bold;
+}
+.div_produit img {
+    padding: 10px;
+    width: calc(60% - 20px);
+    height: fit-content;
+    margin: auto;
+}
+
+.div_produit #caracteristiques {
+    padding: 10px;
+    width: calc(40% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+#prix {
+    background: white;
+    height: fit-content;
+    color: black;
+}
+
+
+#prix s {
+    color: #d92626;
+}
+
+
+.caracteristiques_element {
+    margin-left: auto;
+    padding: 5px;
+    text-align: right;
+}
+
+.xdebug-var-dump {
+    background: white;
+}
+
+#qte_ajout_panier, #bouton_ajout_panier {
+    width: 160px;
+}
+
+#qte_ajout_panier {
+    height: 37px;
+    border-radius:3px;
+    border: 1px solid grey;
+}
+
+#form_ajout_panier, #form_connexion {
+    margin-left: auto;
+}
+
+#form_connexion {
+    display: flex;
+}
+
+#form_connexion * {
+    margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+    .div_produit img, .div_produit #caracteristiques {
+        width: calc(100% - 20px)
+    }
+
+    .div_produit {
+        flex-wrap: wrap;
+    }
+
+    #form_connexion {
+        flex-direction: column;
+    }
+
+    #form_connexion .bouton {
+        margin-right: 0;
+    }
+}

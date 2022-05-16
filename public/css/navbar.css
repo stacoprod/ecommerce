@@ -1,0 +1,144 @@
+#navbar {
+    position: absolute;
+    top:100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navbar_link {
+    padding:15px;
+    color: #4b4b4b;
+    text-decoration: none;
+    transition: color 200ms ease-in-out ;
+    transition: background-color 200ms ease-in-out;
+    transition: transform 200ms;
+    transform: scale(1);
+}
+
+.navbar_link:hover {
+    color : #980000;
+    text-decoration: none !important;
+    transition: color 200ms ease-in-out ;
+    transition: background-color 200ms ease-in-out;
+    transition: transform 200ms;
+    transform: scale(1.2);
+}
+
+#icone_menu {
+    filter: invert();
+    filter: brightness(30%);
+    display:none;
+}
+
+.ouvrir_menu {
+    display: flex!important;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#icone_probike {
+    padding: 12px;
+    cursor:pointer;
+    position: absolute;
+    width: 350px;
+    margin: auto;
+}
+
+#header {
+    height: 80px;
+}
+
+#div_panier {
+    position: absolute;
+    right: 20px;
+    top:20px;
+    display: flex;
+    cursor: pointer;
+}
+#div_panier img {
+    width: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    filter: invert();
+    filter: brightness(30%);
+}
+#div_panier span {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #a40000;
+    color: white;
+    font-weight: bold;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 6px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#div_panier span p {
+    position: relative;
+    bottom: 2px;
+}
+/* mode tablette */
+
+@media screen and (max-width: 960px) {
+    #navbar {
+        flex-direction: column;
+        z-index: 10;
+        margin-left: 0;
+        position: absolute;
+        top: 40px;
+        display: none;
+        border: 1px solid grey;
+        border-radius: 0 11px 11px 0;
+        background-color: rgba(255,255,255,0.7);
+        width: 200px;
+    }
+
+    #icone_menu {
+        display: block;
+        width: 40px;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        position: relative;
+        cursor:pointer;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    #icone_probike {
+        width: 300px;
+    }
+
+}
+@media screen and (max-width: 405px) {
+    #icone_probike {
+        width: 150px;
+    }
+}
+@media screen and (min-width: 961px) {
+   /** #navbar {
+        flex-direction: row;
+        margin: auto;
+        position: initial;
+        display: flex;
+    }**/
+
+    #icone_menu {
+        display: none;
+    }
+
+    #header {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,69 @@
+body {
+    margin:auto;
+    font-family:arial;
+    background: linear-gradient(white, #c5c5c5);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100%;
+    color: black;
+}
+.errorMessage{
+    width: 100%;
+    padding: 18px;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 150px;
+    background-color: rgba(255,0,0,0.5);
+    z-index: 0;
+}
+#header {
+    display: flex;
+    background: rgba(255,255,255, 0);
+
+}
+
+#contenu_page {
+    margin: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    min-height: 800px;
+    background: #fffff0;
+}
+
+.titre_page {
+    font-family: 'Smooch Sans', sans-serif;
+    color: #a80000;
+}
+
+/* padding bottom à changer si tu changes la hauteur du footer */
+.contenu {
+    width: 90%;
+    background: whitesmoke;
+    margin: auto;
+    border-radius: 9px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.img_probike {
+    width: 100%;
+    margin: 7px;
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+}
+img{
+    border-radius: 9px;
+}
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+@media screen and (min-width: 1900px) {
+    body {
+        background-attachment: none;
+        background-size: 100%;
+    }
+}
+
